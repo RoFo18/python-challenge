@@ -1,8 +1,10 @@
-#import depeendencies
-import pandas as pd
 
 # Read in CSV File
-csv_path = "../Desktop/Github/budget_data_1.csv" and "../Desktop/Github/budget_data_2.csv"
+import os
+import csv 
+
+#use brackets to combine the two CSV data sets
+csv_path = ["../Desktop/Github/budget_data_1.csv" , "../Desktop/Github/budget_data_2.csv"]
 
 Bank_df = read_csv(csv_path)
 total_months = bank_df["months"].total()
